@@ -1,11 +1,13 @@
+This is a for of [go-diameter](https://github.com/fiorix/go-diameter) with SGd interfaces added to the base dictionary.
+
 # Diameter Base Protocol
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/fiorix/go-diameter)](https://goreportcard.com/report/github.com/fiorix/go-diameter)
-[![Test Status](https://github.com/fiorix/go-diameter/actions/workflows/test.yaml/badge.svg)](https://github.com/fiorix/go-diameter/actions/workflows/test.yaml)
-[![Go Reference](https://pkg.go.dev/badge/github.com/fiorix/go-diameter/v4.svg)](https://pkg.go.dev/github.com/fiorix/go-diameter/v4)
-[![Latest](https://img.shields.io/github/v/tag/fiorix/go-diameter.svg?sort=semver&style=flat-square&label=latest)](https://github.com/fiorix/go-diameter/tags)
+[![Go Report Card](https://goreportcard.com/badge/github.com/stormvirux/go-diameter)](https://goreportcard.com/report/github.com/stormvirux/go-diameter)
+[![Test Status](https://github.com/stormvirux/go-diameter/actions/workflows/test.yaml/badge.svg)](https://github.com/stormvirux/go-diameter/actions/workflows/test.yaml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/stormvirux/go-diameter/v4.svg)](https://pkg.go.dev/github.com/stormvirux/go-diameter/v4)
+[![Latest](https://img.shields.io/github/v/tag/stormvirux/go-diameter.svg?sort=semver&style=flat-square&label=latest)](https://github.com/stormvirux/go-diameter/tags)
 
-Package [go-diameter](https://pkg.go.dev/github.com/fiorix/go-diameter/v4) is an
+Package [go-diameter](https://pkg.go.dev/github.com/stormvirux/go-diameter/v4) is an
 implementation of the
 Diameter Base Protocol [RFC 6733](http://tools.ietf.org/html/rfc6733)
 and a stack for the [Go programming language](https://go.dev/).
@@ -16,7 +18,7 @@ The current implementation is solid and works fine for general purpose
 clients and servers. It can send and receive messages efficiently as
 well as build and parse AVPs based on dictionaries.
 
-See the API documentation at https://pkg.go.dev/github.com/fiorix/go-diameter/v4
+See the API documentation at https://pkg.go.dev/github.com/stormvirux/go-diameter/v4
 
 ## Features
 
@@ -29,7 +31,7 @@ See the API documentation at https://pkg.go.dev/github.com/fiorix/go-diameter/v4
   	* 3GPP S6a specific commands and AVPs from
   	  	[RFC 5516](https://tools.ietf.org/html/rfc5516) and
   	  	[TS 129 272](http://www.etsi.org/deliver/etsi_ts/129200_129299/129272/10.09.00_60/ts_129272v100900p.pdf)
-- Human readable AVP representation (for debugging)
+- Human-readable AVP representation (for debugging)
 - TLS, IPv4 and IPv6 support for both clients and servers
 - Stack based on [net/http](https://pkg.go.dev/net/http) for simplicity
 - Ships with sample client, server, snoop agent and benchmark tool
@@ -45,16 +47,16 @@ With Go 1.11 and newer (preferred), you can start the client and server already:
 
 ```
 export GO111MODULE=on
-go run github.com/fiorix/go-diameter/v4/examples/server
-go run github.com/fiorix/go-diameter/v4/examples/client -hello
+go run github.com/stormvirux/go-diameter/v4/examples/server
+go run github.com/stormvirux/go-diameter/v4/examples/client -hello
 ```
 
 Without modules, use standard procedure:
 
 ```
-go get github.com/fiorix/go-diameter/examples/...
-go run github.com/fiorix/go-diameter/examples/server
-go run github.com/fiorix/go-diameter/examples/client -hello
+go get github.com/stormvirux/go-diameter/examples/...
+go run github.com/stormvirux/go-diameter/examples/server
+go run github.com/stormvirux/go-diameter/examples/client -hello
 ```
 
 Source code is your best friend. Check out other examples and test cases.
