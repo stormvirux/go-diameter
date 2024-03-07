@@ -4,8 +4,6 @@
 
 package datatype
 
-import "fmt"
-
 // UTF8String data type.
 type UTF8String OctetString
 
@@ -37,5 +35,5 @@ func (s UTF8String) Type() TypeID {
 
 // String implements the Type interface.
 func (s UTF8String) String() string {
-	return fmt.Sprintf("UTF8String{%s},Padding:%d", string(s), s.Padding())
+	return string(s)
 }

@@ -4,8 +4,6 @@
 
 package datatype
 
-import "fmt"
-
 // OctetString data type.
 type OctetString string
 
@@ -37,5 +35,5 @@ func (s OctetString) Type() TypeID {
 
 // String implements the Type interface.
 func (s OctetString) String() string {
-	return fmt.Sprintf("OctetString{%#x},Padding:%d", string(s), s.Padding())
+	return string(s)
 }
