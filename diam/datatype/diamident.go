@@ -4,8 +4,6 @@
 
 package datatype
 
-import "fmt"
-
 // DiameterIdentity data type.
 type DiameterIdentity OctetString
 
@@ -37,5 +35,5 @@ func (s DiameterIdentity) Type() TypeID {
 
 // String implements the Type interface.
 func (s DiameterIdentity) String() string {
-	return fmt.Sprintf("DiameterIdentity{%s},Padding:%d", string(s), s.Padding())
+	return string(s)
 }
