@@ -15,7 +15,8 @@ var testDicts = []string{
 	"./testdata/network_access_server.xml",
 	"./testdata/tgpp_ro_rf.xml",
 	"./testdata/tgpp_s6a.xml",
-	"./testdata/tgpp_swx.xml"}
+	"./testdata/tgpp_swx.xml",
+	"./testdata/tgpp_sgd.xml"}
 
 func TestNewParser(t *testing.T) {
 	for _, dict := range testDicts {
@@ -33,6 +34,7 @@ func TestLoadFile(t *testing.T) {
 		if err := p.LoadFile(dict); err != nil {
 			t.Fatalf("Error Loading %s: %s", dict, err)
 		}
+		t.Log(p)
 	}
 }
 

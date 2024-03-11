@@ -6196,7 +6196,7 @@ var tgppsgdXML = `<?xml version="1.0" encoding="UTF-8"?>
             <data type="OctetString" />
         </avp>
 
-        <avp name="SM-RP-UI " code="3301" must="M,V" may-encrypt="N" vendor-id="10415">
+        <avp name="SM-RP-UI" code="3301" must="M,V" may-encrypt="N" vendor-id="10415">
             <data type="OctetString" />
         </avp>
 
